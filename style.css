@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1.2vw;
+    /*1.2vw=16px*/
+    /* overflow-x: hidden; */
+}
+
+.secondpagebg {
+    background-image: url("./media/Rectangle 35.png");
+    background-size: 95vw 113.6vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: calc(113.6vh);
+    /* margin: auto; */
+    /* padding-top: 10px; */
+    border: 1px solid;
+    text-align: center;
+    /* margin-left: 2vw; */
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    width: 54vw;
+    /* height: 5vh; */
+}
+
+.content h2 {
+    font-weight: 500;
+    font-size: 2.4vw;
+    font-family: Noto Serif;
+}
+
+.content p {
+    margin-top: 2vh;
+    font-size: 1.35vw;
+    color: rgba(78, 81, 108, 1);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 80vw;
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+.cards img {
+    width: 15vw;
+    border: 1vw solid;
+    border-image: url("./media/Rectangle\ 25.png") 10 stretch;
+    /* border-spacing: 0.75vw; */
+}
+
+.card1 h5,
+p,
+a {
+    margin: 3vh 0 3vh 0;
+}
+
+.card1 p {
+    width: 22vw;
+    color: rgba(78, 81, 108, 1);
+}
+
+.card1 h5 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.card1 a {
+    text-decoration: none;
+    color: red;
+}
+
+@media (min-width:800px) {
+    hr {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    hr {
+        margin: auto;
+        width: 35vw;
+        border: 1px solid rgba(234, 88, 88, 1);
+    }
+
+    .secondpagebg {
+        background-image: url("./media/programsbg1.png");
+        background-size: 90vw calc(100%);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .content{
+        width: 80vw;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-weight: 500;
+        font-size: 5.3vw;
+        font-family: Noto Serif;
+        margin-top: 23vh;
+    }
+
+    .content p {
+        display: none;
+    }
+
+    .cards {
+        display: block;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10vh auto;
+
+    }
+    .card1{
+        text-align: center;
+        margin: 5vh auto;
+        padding: 1vw;
+        }
+    
+    .cards img {
+        width: 45vw;
+        height: 45vw;
+        border: 10px solid;
+        border-image: url("./media/Rectangle\ 25.png") 10 stretch;
+        /* border-spacing: 0.75vw; */
+    }
+/*     
+    .card1 h5,
+    p,
+    a {
+        margin: 1vh 2vw 1vh 2vw;
+    } */
+    
+    .card1 p {
+        text-align: center;
+        font-size: 3.7vw;
+        width: 72vw;
+        color: rgba(78, 81, 108, 1);
+        margin: auto;
+        line-height: 6vw;
+        margin-bottom: 4vh;
+    }
+    
+    .card1 h5 {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    
+    .card1 a {
+        font-size: 4vw;
+        text-decoration: none;
+        color: red;
+    }
+}
+
+/* .footer {
+    height: 54.7vh;
+    background-image: url("./media/Rectangle 86.png");
+    background-repeat: no-repeat;
+    background-size: 95vw;
+    align-content: center;
+    border: 1px solid red;
+    margin-top: 50vh;
+}
+
+.group-262 {
+    height: 390px;
+    display: flex;
+    margin: auto;
+}
+
+.div-col-1 {
+    width: 393px;
+    height: 330px;
+    margin: auto;
+    margin-right: 0px;
+}
+
+.div-col-1 :nth-child(1) {
+    width: 155px;
+    height: 36px;
+}
+
+.div-col-1 h5 {
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(21, 27, 74, 1);
+}
+
+.div-col-1 p {
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(78, 81, 108, 1);
+    width: 350px;
+}
+
+.icons {
+    width: 94.37px;
+    height: 23px;
+    text-decoration: none;
+}
+
+.group-261 {
+    width: 420px;
+    height: 276px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 38px;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.group-261 a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(78, 81, 108, 1);
+}
+
+.group-367 {
+    top: 657vh;
+    right: 5vw;
+    position: absolute;
+}
+
+.footerbottom {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(78, 81, 108, 1);
+}
+
+@media (min-width:800px){
+
+   .companyresources{
+    display: none;
+   }
+   .footerimage1{
+    display: none;
+   }
+}
+@media (max-width:800px) {
+    .group-262 {
+        height: 390px;
+        padding: 0px;
+    }
+    .footer {
+        background-image: url("./media/footerbg1.png");
+        background-size: 345px 420px;
+        height: 420px;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+     .group-261{
+        display: none;
+    }
+    .div-col-1{
+        width: 370px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+    .div-col-1 h5 {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(21, 27, 74, 1);
+    }
+    
+    .div-col-1 p {
+        width: 293px;
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(78, 81, 108, 1);
+        margin: auto;
+        margin-top: 20px;
+        line-height: 24px;
+
+    }
+    .div-col-1 :nth-child(1){
+        width: 104px;
+        height: 24px;
+    }
+    .icons{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .companyresources{
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .footerbottom {
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
+    .group-367 {
+        display: none;
+    }
+    .footerimage1{
+        width: 55.81px;
+        height: 47.5px;
+        position: relative;
+        left: 300px;
+    }
+} */
